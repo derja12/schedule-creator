@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <title>Labbie Hours</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="switch-toggle">MODE: UNAVAILABILITY</div>
+            <div id="schedule-wrapper">
+                <div class="weekday-headers" id="empty-header"></div>
+                <div class="weekday-headers"><p>Monday</p></div>
+                <div class="weekday-headers"><p>Tueday</p></div>
+                <div class="weekday-headers"><p>Wednesday</p></div>
+                <div class="weekday-headers"><p>Thursday</p></div>
+                <div class="weekday-headers"><p>Friday</p></div>
+                <div class="weekday-headers"><p>Saturday</p></div>
+
+                <div class="key-column row-800">8:00am</div>
+                <div class="key-column row-830">8:30am</div>
+                <div class="key-column row-900">9:00am</div>
+                <div class="key-column row-930">9:30am</div>
+                <div class="key-column row-1000">10:00am</div>
+                <div class="key-column row-1030">10:30am</div>
+                <div class="key-column row-1100">11:00am</div>
+                <div class="key-column row-1130">11:30am</div>
+                <div class="key-column row-1200">12:00pm</div>
+                <div class="key-column row-1230">12:30pm</div>
+                <div class="key-column row-1300">1:00pm</div>
+                <div class="key-column row-1330">1:30pm</div>
+                <div class="key-column row-1400">2:00pm</div>
+                <div class="key-column row-1430">2:30pm</div>
+                <div class="key-column row-1500">3:00pm</div>
+                <div class="key-column row-1530">3:30pm</div>
+                <div class="key-column row-1600">4:00pm</div>
+                <div class="key-column row-1630">4:30pm</div>
+                <div class="key-column row-1700">5:00pm</div>
+                <div class="key-column row-1730">5:30pm</div>
+                <div class="key-column row-1800">6:00pm</div>
+                <div class="key-column row-1830">6:30pm</div>
+                <div class="key-column row-1900">7:00pm</div>
+                <div class="key-column row-1930">7:30pm</div>
+                <div class="key-column row-2000">8:00pm</div>
+                <div class="key-column row-2030">8:30pm</div>
+                <div class="key-column row-2100">9:00pm</div>
+                <div class="key-column row-2130">9:30pm</div>
+                <div class="key-column row-2200">10:00pm</div>
+
+                <!-- <div class="monday-column row-800 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-830 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-900 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-930 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1000 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1030 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1100 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1130 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1230 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1300 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1330 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1400 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1200 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1430 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1500 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1530 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1600 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1630 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1700 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1730 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1800 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1830 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1900 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-1930 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-2000 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-2030 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-2100 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-2130 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div>
+                <div class="monday-column row-2200 switch-div"><div class="switch-d switch" id="switch-d-800">D</div><div class="switch-r switch" id="switch-r-800">R</div><div class="switch-k switch" id="switch-k-800">K</div><div class="switch-h switch" id="switch-h-800">H</div><div class="switch-l switch" id="switch-l-800">L</div></div> -->
+
+            </div>
+        </div>
+        <script src="app2.js"></script>
+    </body>
+    
+</html>
